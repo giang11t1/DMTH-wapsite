@@ -1,0 +1,29 @@
+{% extends "layout/_layout.html" %} {% block page-container %}
+<main class="search-page">
+    <section class=" container" role="banner">
+        <div class="banner">
+            <div class="input-search">
+                <input class="search" type="text" placeholder="Tìm kiếm sản phẩm yêu thích">
+                <i class="icon-serch">&nbsp</i>
+            </div>
+        </div>
+    </section>
+    <!--/begin HOME MAIN CONTENT-->
+    <section class="main category" role="main">
+        <div class="container empty-search">
+            <div class="wrap-empty-search">
+                <img src="assets/images/iempty-search.png">
+                <h3 class="title-empty-product">Rất tiếc, không tìm thấy sản phẩm nào phù hợp với từ khóa</h3>
+                <p class="word">"mugnka"</p>
+                <p>Bạn hãy thử đổi từ khóa khác hoặc liên hệ với thienhoa.vn, chúng tôi sẽ tìm giúp bạn.</p>
+                <ul class="list-link">
+                    <li class="item-link"><a href="#"><i class="icon-home">&nbsp</i> Về trang chủ</a></li>
+                    <li class="item-link"><a href="#"><i class="icon-top-brand">&nbsp</i> Top thương hiệu yêu thích nhất</a></li>
+                    <li class="item-link"><a href="#"><i class="icon-top-ten">&nbsp</i> Top 10 sản phẩm bán chạy</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--/end HOME MAIN CONTENT-->
+</main>
+{% include "block/_block-modal-menu.html"%} {% endblock %}

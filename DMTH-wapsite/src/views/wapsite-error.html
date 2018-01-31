@@ -1,0 +1,22 @@
+{% extends "layout/_layout.html" %}
+{% block page-container %}
+<main>
+    <section class=" container" role="banner">
+        <div class="wrap-error-404">
+            <div class="col-sm-4 col-xs-4">
+                <img src="assets/images/404-img.png">
+            </div>
+            <div class="col-sm-8 col-xs-8">
+                <h3 class="title-error">Chúng tôi không tìm thấy trang bạn yêu cầu</h3>
+                <p>Có vẻ như trang này không tồn tại hoặc sản phẩm đã bị xóa khỏi website. Bạn có thể thử những liên kết sau:</p>
+                <ul class="list-link">
+                    <li class="item-link"><a href="#"><i class="icon-home">&nbsp</i> Về trang chủ</a></li>
+                    <li class="item-link"><a href="#"><i class="icon-top-brand">&nbsp</i> Top thương hiệu yêu thích nhất</a></li>
+                    <li class="item-link"><a href="#"><i class="icon-top-ten">&nbsp</i> Top 10 sản phẩm bán chạy</a></li>
+                </ul>
+            </div>                    
+        </div>
+    </section>
+</main>
+{% include "block/_block-modal-menu.html"%}
+{% endblock %}

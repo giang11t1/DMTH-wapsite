@@ -1,0 +1,35 @@
+{% extends "layout/_layout.html" %}
+{% block page-container %}
+<main>
+    <section class=" container" role="banner">
+        <form class="login-form">
+            <div class="group">
+                <h2 class="title">Đăng nhập tài khoản</h2>
+            </div>
+            <div class="form-group">
+                <label class="lb-email">Địa chỉ email</label>
+                <input type="email" class="form-control">
+            </div>
+            <div class="form-group">
+                <label class="lb-password">Mật khẩu</label>
+                <input type="password" class="form-control">
+            </div>
+            <div class="row">
+                <div class="check"><input type="checkbox"> <span>Ghi nhớ tài khoản</span></div>
+                <a class="link" href="#" title="">Quên mật khẩu?</a>
+            </div>
+            <button type="submit" class="btn-submit" value="login"> Đăng nhập</button>
+            <div class="row"><p>Chưa có tài khoản?</p> <a class="link" href="#" title="">Đăng ký</a></div>
+            <div class="group group-or"><label class="or">hoặc</label></div>
+            <div class="other-account">
+                <p class="title">Đăng nhập bằng tài khoản</p>
+                <div class="row">
+                    <a class="btn btn-social btn-fb"><span class="icon icon-fb"></span><span class="text">Facebook</span> </a>
+                    <a class="btn btn-social btn-gg"><span class="icon icon-gg"></span><span class="text">Google+</span> </a>
+                </div>
+            </div>
+        </form>
+    </section>
+</main>
+{% include "block/_block-modal-menu.html"%}
+{% endblock %}

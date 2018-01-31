@@ -1,0 +1,38 @@
+/*
+ * Component: Form
+ * ---------------
+ */
+.form-control {
+    height: 36px;
+    padding: 6px 8px;
+    .border-radius(@input-radius);
+    box-shadow: none;
+    border-color: @line-color-1;
+    &:focus {
+        box-shadow: none;
+        border-color: @primary-color;
+    }
+    &:not(select) {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    }
+}
+
+input[type='radio'] {
+    -webkit-appearance: none;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    outline: none;
+    border: 1px solid #595959;
+    margin-top: 0;
+    margin-right: 5px;
+    &:checked {
+        outline: none;
+        border: 1px solid #00adef;
+    }
+    &:before {
+        margin: 2px 3px;
+    }
+}

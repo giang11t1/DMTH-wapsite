@@ -1,0 +1,14 @@
+{% extends "layout/_layout.html" %}
+{% block page-container %}
+<main>
+    <section class=" container" role="banner">
+        <div class="wrap-finish">
+            <img src="assets/images/empty-cart.png">
+            <h2 class="title-empty">Rất tiếc, giỏ hàng của bạn hiện đang trống</h2>
+            <p>Hãy nhanh tay tìm kiếm & chọn những sản phẩm yêu thích của bạn</p>
+            <button class="continue" type="button" value="">Tiếp tục mua sắm </button>
+        </div>
+    </section>
+</main>
+{% include "block/_block-modal-menu.html"%}
+{% endblock %}

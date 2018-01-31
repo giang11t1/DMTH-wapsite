@@ -1,0 +1,52 @@
+{% extends "layout/_layout.html" %}
+{% block page-container %}
+<main>
+    <section class=" container" role="banner">
+        <form class="register-form">
+            <div class="group">
+                <h2 class="title">thông tin đăng ký tài khoản Thiên Hòa</h2>
+            </div>
+            <div class="form-group">
+                <label>Họ tên</label>
+                <div class="row">
+                    <div class="col-md-2 col-sm-2 col-xs-3">
+                        <select class="form-control gender">
+                          <option>Anh</option>
+                          <option>Chị</option>
+                        </select>
+                    </div>
+                    <div class="col-md-10 col-sm-10 col-xs-9">
+                        <input class="name form-control" type="text" >
+                        <label class="error">Bạn phải nhập họ tên</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Mật khẩu</label>
+                <input type="password" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Nhập lại mật khẩu</label>
+                <input type="password" class="form-control">
+            </div>
+            <div class="row">
+                <div class="check">
+                    <input type="checkbox"> 
+                    <span>Tôi đã đọc và đồng ý với</span>
+                    <a class="link" href="#" title="">Điều khoản sử dụng của Thiên Hòa</a>
+                    <label class="error">Bạn phải check trước</label>
+                </div>
+                
+            </div>
+            <button type="submit" class="btn-submit" value="login"> Đăng ký</button>
+            <div class="row"><p>Đã có tài khoản?</p> <a class="link" href="#" title="">Đăng nhập</a></div>
+        </form>
+    </section>
+</main>
+{% include "block/_block-modal-menu.html"%}
+{% endblock %}

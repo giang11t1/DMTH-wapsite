@@ -1,0 +1,16 @@
+{% extends "layout/_layout.html" %}
+{% block page-container %}
+<main>
+    <section class=" container" role="banner">
+        <div class="wrap-finish">
+            <img src="assets/images/succsess.png">
+            <h2 class="title-finish">Đơn đặt hàng của bạn đã được đặt thành công</h2>
+            <p>Cảm ơn bạn đã đặt hàng tại <b>dienmaythienhoa</b>. Mã số đơn hàng của bạn là <span class="price">MTH12122017023</span></p>
+            <p>Để kiểm tra tình trạng đơn hàng, bạn vui lòng click vào <a href="#" class="link">đây</a></p>
+            <p>dienmaythienhoa.vn chúc bạn mua sắm vui vẻ!</p>
+            <button class="continue" type="button" value="">Tiếp tục mua sắm </button>
+        </div>
+    </section>
+</main>
+{% include "block/_block-modal-menu.html"%}
+{% endblock %}
